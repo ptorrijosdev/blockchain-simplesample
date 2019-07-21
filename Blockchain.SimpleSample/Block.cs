@@ -30,6 +30,7 @@ namespace Blockchain.SimpleSample
 
         public int GetHash()
         {
+
             string content = string.Format("{0}.{1}.{2}", PreviousHash.ToString(), TimeSpan.ToString("dd/MM/yyyy HH:mm:ss"), Content.ToString());
             return content.GetHashCode();
         }
